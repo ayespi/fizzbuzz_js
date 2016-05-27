@@ -12,33 +12,37 @@ For the numbers 1 to 100, print "Fizz" if the number is divisible by 3, print "B
 
 The lines below each represent a line of code necessary to create this program. However, they are all out of order. Put them in the correct order.
 
+1. If the remainder of my number divided by 3 is 0
 - While my number is less than or equal to 100
-- My number is 1
+- Otherwise
+- Write my number
+- Otherwise
+- Write "FizzBuzz"
 - My number increases by 1
-- If the remainder of my number divided by 3 is 0
-- If the remainder of my number divided by 5 is 0
+- Otherwise
+- My number is 1
 - If the remainder of my number divided by 3 is 0, and the remainder of my number divided by 5 is 0
 - Write "Fizz"
 - Write "Buzz"
-- Write "FizzBuzz"
-- Write my number
-- Otherwise
-- Otherwise
-- Otherwise
+- If the remainder of my number divided by 5 is 0
 
 ## Part 2: Real code
 
+Each of the lines from the previous part corresponds to one of the lines of *actual* code below. Put these lines in the correct order. Test them out in the included `index.html`.
+
+> There is one more line of code than in the previous part. What does this line do?
+
+1. `var number = 1;`
+- `else`
 - `while(number <= 100){`
-- `var number = 1;`
-- `number += 1;`
 - `if(number % 3 === 0)`
+- `else`
+- `{document.write(number)}`
+- `}`
 - `if(number % 5 === 0)`
+- `{document.write("FizzBuzz")}`
+- `number += 1;`
 - `if(number % 3 === 0 && number % 5 === 0)`
 - `{document.write("Fizz")}`
 - `{document.write("Buzz")}`
-- `{document.write("FizzBuzz")}`
-- `{document.write(number)}`
 - `else`
-- `else`
-- `else`
-- `}`
